@@ -1,0 +1,239 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+@keyframes slideFromRight {
+  0% {
+    transform: translateX(30vh);
+  }
+
+  70% {
+    transform: translateX(-4rem);
+  }
+
+  85% {
+    transform: translateX(-4rem);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideFromLeft {
+  0% {
+    transform: translateX(-30vh);
+  }
+
+  70% {
+    transform: translateX(4rem);
+  }
+
+  85% {
+    transform: translateX(4rem);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+@keyframes slideFromRightLarge {
+  0% {
+    transform: translateX(70vh);
+  }
+
+  70% {
+    transform: translateX(-4rem);
+  }
+
+  85% {
+    transform: translateX(-4rem);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideFromLeftLarge {
+  0% {
+    transform: translateX(-70vh);
+  }
+
+  70% {
+    transform: translateX(4rem);
+  }
+
+  85% {
+    transform: translateX(4rem);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+@keyframes appear {
+  0% {
+    opacity: 0;
+  }
+
+  80% {
+    opacity: 0;
+  }
+
+  85% {
+    opacity: 0.5;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.navbar {
+  background: blanchedalmond;
+  min-height: 3vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 3vh;
+}
+
+.banner {
+  background: url(./images/fond2.jpg);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 52vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  gap: 8.5rem;
+  position: relative;
+  right: 7.5rem;
+}
+
+.block {
+  position: relative;
+}
+
+.fond-2 {
+  min-height: 45vh;
+  background: url(./images/fond2.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+.banner-2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  font-family: Bebas Neue;
+  color: white;
+}
+
+.container-2 {
+  display: flex;
+  justify-content: center;
+  gap: 2vh;
+}
+
+.resultat {
+  font-size: 3rem;
+  font-weight: bold;
+  animation: appear 1s;
+}
+
+.blok {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+button:hover {
+  transform: scale(1.15);
+  transition: all 0.3s linear;
+  cursor: pointer;
+}
+button {
+  width: 0px;
+  height: 0px;
+  background: url(./images/fond2.jpg);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  border: none;
+}
+
+.img-1 {
+  animation: slideFromLeft 1s ease-in-out;
+}
+
+.img-2 {
+  animation: slideFromRight 1s ease-in-out;
+}
+
+.chifoumi {
+  font-family: Irish Grover;
+  font-size: 6rem;
+  color: rgb(221, 240, 138);
+}
+.choisir {
+  font-family: Bebas Neue;
+  color: white;
+  font-size: 3rem;
+}
+.el {
+  position: relative;
+  left: 2rem;
+  font-size: 2rem;
+}
+
+@media screen and (min-width: 800px) {
+  img {
+    transform: scale(1.4);
+  }
+  .chifoumi {
+    position: relative;
+    bottom: 3rem;
+  }
+  .choisir {
+    position: relative;
+    bottom: 3rem;
+  }
+  .container {
+    gap: 15rem;
+  }
+  .banner-2 {
+    gap: 8vh;
+  }
+  .container-2 {
+    gap: 8vh;
+    position: relative;
+    bottom: 1rem;
+  }
+  .el {
+    margin-bottom: 5vh;
+    font-size: 2rem;
+  }
+  .resultat {
+    font-size: 2rem;
+    position: relative;
+    bottom: 3rem;
+  }
+  .img-1 {
+    animation: slideFromLeftLarge 1s ease-in-out;
+  }
+
+  .img-2 {
+    animation: slideFromRightLarge 1s ease-in-out;
+  }
+}
